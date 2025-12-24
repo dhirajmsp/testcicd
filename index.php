@@ -25,7 +25,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $errors['message'] = 'Please enter a message.';
     }
 
-    
     if (empty($errors)) {
         // In a real app, you might send an email or store this in a database.
         // For this demo, we simply flag success and clear fields.
