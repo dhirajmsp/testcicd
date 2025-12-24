@@ -5,7 +5,6 @@ $success = false;
 $errors = [];
 $old = ['name' => '', 'email' => '', 'message' => ''];
 
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Trim and sanitize inputs
     $old['name'] = isset($_POST['name']) ? trim($_POST['name']) : '';
@@ -19,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($old['email'] === '') {
         $errors['email'] = 'Please enter your email.';
     } elseif (!filter_var($old['email'], FILTER_VALIDATE_EMAIL)) {
-        $errors['email'] = 'Please enter a valid email address.';
+        $errors['email'] = 'Please enter a valid email address....';
     }
 
     if ($old['message'] === '') {
