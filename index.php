@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if ($old['message'] === '') {
-        $errors['message'] = 'Please enter a message.';
+        $errors['message'] = 'Please enter a message...';
     }
 
     if (empty($errors)) {
