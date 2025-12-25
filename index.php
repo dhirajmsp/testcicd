@@ -20,6 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } elseif (!filter_var($old['email'], FILTER_VALIDATE_EMAIL)) {
         $errors['email'] = 'Please enter a valid email address....';
     }
+    
 
     if ($old['message'] === '') {
         $errors['message'] = 'Please enter a message...';
