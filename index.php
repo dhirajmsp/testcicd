@@ -6,8 +6,7 @@ $errors = [];
 $old = ['name' => '', 'email' => '', 'message' => ''];
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  
-    // Trim and sanitize inputs
+      // Trim and sanitize inputs
     $old['name'] = isset($_POST['name']) ? trim($_POST['name']) : '';
     $old['email'] = isset($_POST['email']) ? trim($_POST['email']) : '';
     $old['message'] = isset($_POST['message']) ? trim($_POST['message']) : '';
